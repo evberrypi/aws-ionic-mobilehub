@@ -1,0 +1,7 @@
+{
+  "name": "ionaws",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
