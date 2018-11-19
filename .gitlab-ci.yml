@@ -6,13 +6,6 @@ stages:
 before_script:
   - npm install
 
-
-cache:
-  untracked: true
-  key: "$CI_PROJECT_ID"
-  paths:
-    - node_modules/
-
 build_web:
   stage: test
   only:
