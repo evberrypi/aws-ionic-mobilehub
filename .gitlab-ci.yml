@@ -2,10 +2,8 @@ image: marcoturi/ionic:latest
 
 stages:
   - test
-  - deploy
 
 before_script:
-  - yarn config set cache-folder .yarn
   - yarn
   - npm run post-install
 
@@ -21,8 +19,6 @@ build_web:
   only:
       - master
   script:
-    - npm run lint
-    - npm run scss-lint
     - npm run test
     - npm run build
     - npm run e2e
