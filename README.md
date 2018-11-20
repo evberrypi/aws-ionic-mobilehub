@@ -1,12 +1,13 @@
-# Ionic AWS Starter
+# Ionic AWS Mobile Hub To-Do List App
 
-This Ionic starter comes with a pre-configured [AWS Mobile Hub](https://aws.amazon.com/mobile/) project set up to use Amazon DynamoDB, S3, Pinpoint, and Cognito.
+This is an Ionic App configured to run on [AWS Mobile Hub](https://aws.amazon.com/mobile/) project set up to use Amazon DynamoDB, S3, Pinpoint, and Cognito.
+** Follow [the instructions on the Chef Repo](https://gitlab.com/evberrypi/chef-dev-cookbook) to have this automatically deployed to AWS using Chef.**
 
 ## Using the Starter
 
 ### Installing Ionic CLI 3.0
 
-This starter project requires Ionic CLI 3.0, to install, run
+This starter project requires Ionic CLI 3.0 or greater, to install, run
 
 ```bash
 npm install -g ionic@latest
@@ -55,11 +56,7 @@ Successfully created AWS Mobile Hub project: ...
 ```
 
 ### Configuring AWS Mobile Hub Project
-
-The starter project gives instructions on how to do this from the
-command line, but some have reported bugs with
-[awsmobile](https://github.com/ionic-team/starters/issues/46),
-so here's how to do it in the browser.
+Log into the [AWS Mobile Hub] and connect your app by doing the following:
 
 #### NoSQL Database
 
@@ -154,19 +151,6 @@ Now the app is configured and wired up to the AWS Mobile Hub and AWS services. T
 
 ```bash
 ionic serve
-```
-
-To run the app on device, first add a platform, and then run it:
-
-```bash
-ionic cordova platform add ios
-ionic cordova run ios
-```
-
-Or open the platform-specific project in the relevant IDE:
-
-```bash
-open platforms/ios/MyApp.xcodeproj
 ```
 
 ### Hosting app on Amazon S3
